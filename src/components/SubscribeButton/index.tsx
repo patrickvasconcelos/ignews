@@ -1,12 +1,13 @@
 import styles from './styles.module.scss'
-import { FaGithub } from 'react-icons/fa'
-import { FiX } from 'react-icons/fi'
 
+interface SubscribeButtonProps {
+    priceId: string;
+}
 
-export function SubscribeButton() {
+export function SubscribeButton({ priceId }: SubscribeButtonProps) {
     return (
         <button type='button' className={styles.subscribeButton}>
             Subscribe
         </button>
-    ) 
+    )
 }
